@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   FragTrap.cpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yuliano <yuliano@student.42.fr>            +#+  +:+       +#+        */
+/*   By: ypacileo <ypacileo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/24 21:44:30 by yuliano           #+#    #+#             */
-/*   Updated: 2026/01/25 01:36:00 by yuliano          ###   ########.fr       */
+/*   Updated: 2026/01/25 12:42:51 by ypacileo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,16 +37,6 @@ FragTrap &FragTrap::operator=(const FragTrap &other)
 		ClapTrap::operator=(other);
 	}
 	return *this;
-}
-
-int FragTrap::getLifePoints() const
-{
-	return (lifepoint);
-}
-
-int FragTrap::getAttackDamage() const
-{
-	return (attackDamage);
 }
 
 FragTrap::~FragTrap()

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ScavTrap.hpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yuliano <yuliano@student.42.fr>            +#+  +:+       +#+        */
+/*   By: ypacileo <ypacileo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/24 09:10:15 by yuliano           #+#    #+#             */
-/*   Updated: 2026/01/25 01:27:16 by yuliano          ###   ########.fr       */
+/*   Updated: 2026/01/25 13:21:52 by ypacileo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 #define SCAVTRAP_H
 
 #include "ClapTrap.hpp"
+#include <string>
 
 class ScavTrap:virtual public ClapTrap
 {
@@ -24,7 +25,6 @@ class ScavTrap:virtual public ClapTrap
 	ScavTrap &operator=(const ScavTrap &other);
 	~ScavTrap();
 	void attack(const std::string& target);
-	static int getEnergyPoints() const;
 	void guardGate();
 };
 

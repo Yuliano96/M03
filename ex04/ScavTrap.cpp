@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ScavTrap.cpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yuliano <yuliano@student.42.fr>            +#+  +:+       +#+        */
+/*   By: ypacileo <ypacileo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/24 09:55:25 by yuliano           #+#    #+#             */
-/*   Updated: 2026/01/25 01:36:25 by yuliano          ###   ########.fr       */
+/*   Updated: 2026/01/25 13:23:55 by ypacileo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@ ScavTrap::ScavTrap():ClapTrap("ScavTrap", 100, 50, 20)
 {
 	std::cout <<"ScavTrap default constructor called\n";
 }
+
 ScavTrap::ScavTrap(const std::string &name)
 	:ClapTrap(name, 100, 50, 20)
 {
@@ -39,10 +40,6 @@ ScavTrap &ScavTrap::operator=(const ScavTrap &other)
 	return (*this);
 }
 
-static int ScavTrap::getEnergyPoints() const
-{
-	return (energypoint);
-}
 
 void ScavTrap::attack(const std::string &target)
 {

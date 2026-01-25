@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   FragTrap.hpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yuliano <yuliano@student.42.fr>            +#+  +:+       +#+        */
+/*   By: ypacileo <ypacileo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/24 21:36:03 by yuliano           #+#    #+#             */
-/*   Updated: 2026/01/25 01:25:55 by yuliano          ###   ########.fr       */
+/*   Updated: 2026/01/25 12:42:34 by ypacileo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,9 +24,7 @@ class FragTrap:virtual public ClapTrap
 	FragTrap(const FragTrap &other);
 	FragTrap &operator=(const FragTrap &other);
 	~FragTrap();
-
-	static int getLifePoints() const;
-	static int getAttackDamage() const;
+	
 	void highFivesGuys(void);
 	
 };

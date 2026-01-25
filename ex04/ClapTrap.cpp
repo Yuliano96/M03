@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ClapTrap.cpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yuliano <yuliano@student.42.fr>            +#+  +:+       +#+        */
+/*   By: ypacileo <ypacileo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/20 23:38:04 by yuliano           #+#    #+#             */
-/*   Updated: 2026/01/24 19:33:51 by yuliano          ###   ########.fr       */
+/*   Updated: 2026/01/25 13:35:09 by ypacileo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,12 @@ ClapTrap::ClapTrap():name("ClapTrap"),lifepoint(10),energypoint(10), \
 					attackDamage(0)
 {
 	std::cout <<"ClapTrap default constructor called\n";
+}
+
+ClapTrap::ClapTrap(const std::string &_name):name(_name),lifepoint(10), \
+		energypoint(10), attackDamage(0)
+{
+	std::cout << "ClapTrap " << this->name << " created" << std::endl;
 }
 
 ClapTrap::ClapTrap(const std::string &_name, int _lifepoint, \
